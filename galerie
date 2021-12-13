@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="robots" content="noindex, follow">
+    <title>Durra Markt Stuttgart</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link  rel="stylesheet" href="./src/style.css">
+    <script src="https://kit.fontawesome.com/2ee7bde2cf.js"></script>
+     
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./src/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./src/images/favicons/safari-pinned-tab.svg" color="#0b610b">
+    <link rel="shortcut icon" href="./src/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#0b610b">
+    <meta name="msapplication-config" content="./src/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#0b610b">
+
+
+
+</head>
+<style>
+
+</style>
+<body>
+    <!-- ### Navigation-Leiste ### -->
+    <nav>
+        <div class="nav-desktop" >
+          <a href="./index.html"><img id="logo-left" src="./src/images/Logo/logo.png"></a>
+           <ul>
+             <li><a href="./index.html">HOME</a></li>
+             <li><a href="./brotbackstube.html">BROT-BACKSTUBE</a></li>
+             <li><a href="" class="aktiv">GALERIE</a></li>
+             <li><a href="./überuns.html">ÜBER UNS</a></li>
+             <li><a href="./kontakt.html">KONTAKT</a></li>
+             <li><a href="https://www.facebook.com/DurraMarkts/" target="blank"><i class='fab fa-facebook-f' style='font-size: 16px;' ></i></a></li>
+             <li id="pfeil-lang"><p id="DE" style="margin:0; color:#fff; font-size:1.2rem; font-weight: bold; cursor: pointer;">DE <i id="DE-pfeil" class='fas fa-caret-down' style='font-size: 1rem; color:#fff;'></i></p></li>
+           </ul>
+           <a href="./index.html"><img id="logo-right" src="./src/images/Logo/logo.png"></a>
+        </div>
+        <div class="nav-mobile">
+             <a href="./index.html"><img id="logo-left-mobile" src="./src/images/Logo/logo.png"></a>
+             <div class="nav-mobile-buttom" onclick="myFunction(this), dropdown()">
+                <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+             </div>
+             
+        </div>
+        <div id="dropdown-menü">
+         <ul>
+             <li><a href="./index.html">HOME</a></li>
+             <li><a href="./brotbackstube.html">BROT-BACKSTUBE</a></li>
+             <li><a href="" class="aktiv">GALERIE</a></li>
+             <li><a href="./überuns.html">ÜBER UNS</a></li>
+             <li><a href="./kontakt.html">KONTAKT</a></li>
+             <li><a href="https://www.facebook.com/DurraMarkts/" target="blank"><i class='fab fa-facebook-f' style='font-size:14px'></i> </a></li>
+             <li id="dropdown-lang-mobiel">
+              <li id="pfeil-lang-mobiel"><p id="DE-m" style="margin:0; color:#fff; font-size:1.2rem; font-weight: bold; cursor: pointer;">DE <i id="DE-m-pfeil" class='fas fa-caret-down' style='font-size: 1rem; color:#fff;'></i></p></li>
+               <ul id="dropdown-lang-mobiel-list" style="display: none;">
+                <li><a href="" class="lang-activ-mobiel">Deutsch</a></li>
+                <li><a href="./ar/galerie.html">عربي</a></li>
+                <li><a href="./en/galerie.html">English</a></li>
+               </ul>
+             </li>
+           </ul>
+        </div>
+       </nav>
+
+       <div id="dropdown-lang" style="display: none;">
+        <ul>
+          <li><a href="" class="lang-activ">Deutsch</a></li>
+          <li><a href="./ar/galerie.html">عربي</a></li>
+          <li><a href="./en/galerie.html">English</a></li>
+        </ul>
+      </div>
+       
+      
+       <!--- ###Galerie ###-->
+       <div id="welcome-g"></div>
+       
+       <div class="galerie-b">
+        <i class="fas fa-arrow-alt-circle-up" style="font-size:40px;color:#708090;cursor:pointer; margin-top:5px;" onclick="scoole()"></i>
+    </div>
+
+       <section id="galerie">
+        <h2 class="intro center"  style="font-size:3rem; color:#088A29;"><span><img src="./src/images/Home/gleich.png"></span><span><img src="./src/images/Home/gleich.png"></span> GALERIE <span><img src="./src/images/Home/gleich.png"></span><span><img src="./src/images/Home/gleich.png"></span></h2>
+        <p class="s" id="topG">Damit Sie uns besser kennenlernen!</p>
+        
+        <div class="row">
+          <div class="col-2">
+            <div class="a">
+              <img src="./src/images/Galerie/foto4.jpg" style="width:100%; border-radius: 5px;  " onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <img src="./src/images/Galerie/foto1.jpeg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          </div>
+          <div class="col-2"> 
+            <div class="c">
+              <img src="./src/images/Galerie/foto3.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="a">
+              <img src="./src/images/Galerie/foto8.jpg" style="width:100%; border-radius: 5px;  " onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2"> 
+            <div>
+              <img src="./src/images/Galerie/foto5.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2"> 
+            <div class="c">
+              <img src="./src/images/Galerie/foto6.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="a">
+              <img src="./src/images/Galerie/foto7.jpg" style="width:100%; border-radius: 5px;  " onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <img src="./src/images/Galerie/foto11.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+          </div>
+          </div>
+          <div class="col-2"> 
+            <div class="c">
+              <img src="./src/images/Galerie/foto10.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+          </div>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-2">
+            <div class="a">
+              <img src="./src/images/Galerie/foto2.jpg" style="width:100%; border-radius: 5px;  " onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <img src="./src/images/Galerie/foto9.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+          </div>
+          </div>
+          <div class="col-2"> 
+            <div class="c">
+              <img src="./src/images/Galerie/foto12.jpg" style="width:100%; border-radius:5px;" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="a">
+              <img src="./src/images/Galerie/foto16.jpg" style="width:100%; border-radius: 5px;  " onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <img src="./src/images/Galerie/foto17.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+          </div>
+          </div>
+          <div class="col-2"> 
+            <div class="c">
+              <img src="./src/images/Galerie/foto18.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="a">
+              <img src="./src/images/Galerie/foto20.jpg" style="width:100%; border-radius: 5px;  " onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <img src="./src/images/Galerie/foto23.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+          </div>
+          </div>
+          <div class="col-2"> 
+            <div class="c">
+              <img src="./src/images/Galerie/foto22.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+          </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="a">
+              <img src="./src/images/Galerie/foto24.jpg" style="width:100%; border-radius: 5px;  " onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <img src="./src/images/Galerie/foto25.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+          </div>
+          </div>
+          <div class="col-2"> 
+            <div class="c">
+              <img src="./src/images/Galerie/foto26.jpg" style="width:100%; border-radius: 5px;" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+          </div>
+          </div>
+        </div>
+        
+
+
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlidesGalerie">
+              <div class="numbertext">1 / 21</div>
+              <img src="./src/images/Galerie/foto4.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlidesGalerie">
+              <div class="numbertext">2 / 21</div>
+              <img src="./src/images/Galerie/foto1.jpeg" style="width:100%">
+            </div>
+        
+            <div class="mySlidesGalerie">
+              <div class="numbertext">3 / 21</div>
+              <img src="./src/images/Galerie/foto3.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlidesGalerie">
+              <div class="numbertext">4 / 21</div>
+              <img src="./src/images/Galerie/foto8.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">5 / 21</div>
+              <img src="./src/images/Galerie/foto5.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">6 / 21</div>
+              <img src="./src/images/Galerie/foto6.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">7 / 21</div>
+              <img src="./src/images/Galerie/foto7.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">8 / 21</div>
+              <img src="./src/images/Galerie/foto11.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">9 / 21</div>
+              <img src="./src/images/Galerie/foto10.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">10 / 21</div>
+              <img src="./src/images/Galerie/foto2.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">11 / 21</div>
+              <img src="./src/images/Galerie/foto9.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">12 / 21</div>
+              <img src="./src/images/Galerie/foto12.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">13 / 21</div>
+              <img src="./src/images/Galerie/foto16.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">14 / 21</div>
+              <img src="./src/images/Galerie/foto17.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">15 / 21</div>
+              <img src="./src/images/Galerie/foto18.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">16 / 21</div>
+              <img src="./src/images/Galerie/foto20.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">17 / 21</div>
+              <img src="./src/images/Galerie/foto23.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">18 / 21</div>
+              <img src="./src/images/Galerie/foto22.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">19 / 21</div>
+              <img src="./src/images/Galerie/foto24.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">20 / 21</div>
+              <img src="./src/images/Galerie/foto25.jpg" style="width:100%">
+            </div>
+            <div class="mySlidesGalerie">
+              <div class="numbertext">21 / 21</div>
+              <img src="./src/images/Galerie/foto26.jpg" style="width:100%">
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+        </div>
+          </section>
+
+         <!-- ### Galerie-footer ###-->
+         <div class="foo">
+          <div id="footer-o">
+            <div class="row">
+                <div class="col-2">
+                    <div id="erst" class="footer-block">
+                            <p class="big"> Durra Markt-Stuttgart</p>
+                            <p><i class='fas fa-map-marker-alt' style='font-size:22px;color:#EB1D22'></i> Mercedesstraße 23</p>
+                            <p>70372 Stuttgart-Bad cannstatt</p>
+                            <p><i class="fa fa-phone" style="font-size:22px;color:#EB1D22"></i> 0125325623</p>
+                            <p><i class="fa fa-envelope" style="font-size:18px;color:#EB1D22"></i> info@durramarket-stuttgart.de</p>
+                    </div>
+                </div>
+                <div class="col-2" id="personal">
+                    <div id="zweit" class="footer-block">
+                        <p class="big">Öffnungszeiten</p>
+                        <p> Montag-Samstag</p>
+                        <p style="font-family: sans-serif;">08:30 - 20:00</p>
+                        <p>Sonntag (geschlossen)</p>
+                    </div>
+                    <div class="x">
+                      <p  class="fo-da"> <a href="./impressum.html" target="blank"> Impressum</a> | <a href="./datenschutz.html"  target="blank">Datenschutzerklärung</a></p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div id="dritt" class="footer-block">
+                            <p class="big">E-Mail Newsletter</p>
+                            <p id="whatsapp-block">Sie wollen immer auf dem aktuellsten Stand sein und über die neuesten Angebote 
+                              im Durra Markt informiert werden? Dann melden Sie sich doch für unseren E-Mail Newsletter an. 
+                              </p>
+                              <input type="email" name="email" id="whatsapp-input" placeholder="  Ihre E-Mail-Adresse ">
+                              <p><button id="whatsapp-button">Speichern</button></p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="./src/script/generell.js" defer></script>
+    <script src="./src/script/galerie.js" defer></script>
+</body>
+</html>
